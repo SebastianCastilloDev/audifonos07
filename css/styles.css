@@ -246,16 +246,20 @@ margin: 0;
     color: var(--primario);
     border-radius: 2rem;
     min-height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-repeat: no-repeat;
     background-position: 90% center;
     background-size: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform background-size;
+    transition-duration: 300ms;
 }
+.modelo:hover{
+    transform: scale(1.1) rotate(8deg);
+    background-size: 30rem;
+}
+
 @media (min-width:768px) { 
     .modelo {
         margin-bottom: 0rem;
